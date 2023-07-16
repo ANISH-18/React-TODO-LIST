@@ -1,0 +1,8 @@
+h3{
+    text-align: left;
+}
+
+.action{
+    display: flex;
+    justify-content: space-around;
+}
