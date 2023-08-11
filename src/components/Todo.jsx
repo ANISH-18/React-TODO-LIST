@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Table from "react-bootstrap/Table";
 import { Button } from "react-bootstrap";
 import "./Create.css";
 import { LinkContainer } from "react-router-bootstrap";
@@ -34,8 +35,11 @@ function Todo() {
     <div>
       <div className="container">
         <h1>TODO LIST</h1>
-        <table class="table table-striped table-hover">
-          <thead className="table-dark">
+
+        {/* <table className="table table-striped table-hover table-responsive">
+          <thead className="table-dark"> */}
+        <Table responsive striped bordered hover variant="light">
+          <thead>
             <tr>
               <th>#</th>
               <th>Task</th>
@@ -72,7 +76,7 @@ function Todo() {
               );
             })}
           </tbody>
-        </table>
+        </Table>
       </div>
     </div>
   );

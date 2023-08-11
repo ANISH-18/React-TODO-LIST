@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import Header from './components/Header';
 import Create from './components/Create';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
